@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+
+    &__link {
+        display: flex;
+        width: 10vw;
+        justify-content: space-between;
+    }
+}
