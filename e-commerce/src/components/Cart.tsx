@@ -1,6 +1,8 @@
+import '../styles/Cart.scss'
+
 function Cart () {
     return(
-        <div className="header">
+        <div className="Cart">
             Panier
         </div>
     )
