@@ -76,7 +76,7 @@ export const productList = [
 
 	{
 		name: 'chaussure de running',
-		category: 'sport',
+		category: 'vetement',
 		id: '6uo',
 		stock: 2,
 		water: 2,
