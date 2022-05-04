@@ -1,0 +1,29 @@
+.Footer {
+    min-height: 20vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    &__block {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__link {
+        color: white;
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.img_social {
+    width: 30px;
+}
+
+.Footer-link {
+    color: white;
+}
