@@ -1,6 +1,8 @@
+import '../styles/Home.scss'
+
 function Home () {
     return(
-        <div>
+        <div className='Home'>
             Page d'acceuil
         </div>
     )
