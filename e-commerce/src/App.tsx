@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import Product from './components/Product'
 import Cart from './components/Cart'
-import './App.css';
+import './App.scss';
 import { Routes, Route } from "react-router-dom";
 
 function App() {

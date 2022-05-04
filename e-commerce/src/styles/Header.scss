@@ -1,11 +1,20 @@
 .header {
     display: flex;
-    height: 10vh;
+    height: 8vh;
     justify-content: space-between;
 
     &__link {
         display: flex;
         width: 10vw;
         justify-content: space-between;
+        align-items: center;
+
+        &__title {
+            font-weight: lighter;
+        }
     }
+}
+
+.link {
+    height: 10px;
 }
