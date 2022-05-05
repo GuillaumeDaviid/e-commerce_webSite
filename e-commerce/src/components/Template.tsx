@@ -1,4 +1,6 @@
 import { productList } from '../datas/productList'
+import img from "../images/running.jpg"
+import '../styles/Template.scss'
 
 type Props = {
     category: string,
@@ -7,12 +9,14 @@ type Props = {
 function Template ({category}:Props) {
 
     const item = productList.map((data) => 
-    category === data.category ? <div></div> : <div></div>)
+    category === data.category ? <div className='Template__item'><img  className='Template__item__img' src={img} alt={data.name}/>
+    <p>{data.name}</p>
+    <p className='item-price'>{data.price} €</p>
+    </div> : <div></div>)
 
 
     return(
         <div className='Template'>
-            si category = vetement alors affiche ... photo, nom, prix, stock ... 
             {item}
         </div>
     )

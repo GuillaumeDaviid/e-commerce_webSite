@@ -1,0 +1,19 @@
+.Template {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__img {
+            width: 150px;
+        }
+    }
+}
+
+.item-price {
+    margin-top: 10px;
+}
