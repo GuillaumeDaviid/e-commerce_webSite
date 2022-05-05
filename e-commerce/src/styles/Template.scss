@@ -1,12 +1,14 @@
 .Template {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     &__item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 30px;
 
         &__img {
             width: 150px;
@@ -16,4 +18,9 @@
 
 .item-price {
     margin-top: 10px;
+    color: black;
+}
+
+.item-name {
+    color: black;
 }
