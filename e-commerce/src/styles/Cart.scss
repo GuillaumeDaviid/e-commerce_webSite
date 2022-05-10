@@ -1,3 +1,22 @@
 .Cart {
     height: 90vh;
+
+    &_content {
+
+        &-btn {
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            border-color: black;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            transition-timing-function: ease-in;
+        }
+    }
+}
+
+.Cart_content-btn:hover {
+    background-color: #d8262f;
+    border-color: #d8262f;
 }
