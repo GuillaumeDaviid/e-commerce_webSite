@@ -1,3 +1,44 @@
 .Cart {
     height: 90vh;
+
+    &_content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &-btn {
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            border-color: black;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            transition-timing-function: ease-in;
+            margin-top: 20px;
+        }
+
+        &-elt {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            justify-content: space-between;
+            width: 20vw;
+        }
+
+        &-total {
+            margin-top: 20px;
+        }
+
+        &-quantity {
+            display: flex;
+        }
+    }
+}
+
+.Cart_content-btn:hover {
+    background-color: #d8262f;
+    border-color: #d8262f;
 }
