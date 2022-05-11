@@ -1,6 +1,9 @@
+import {useParams} from "react-router-dom";
+
 function Detail () {
+    let {id} = useParams()
     return (
-        <div></div>
+        <div>Detail du produit {id?.substring(3)}</div>
     )
 }
 
