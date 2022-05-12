@@ -7,10 +7,14 @@ import Cart from './components/Cart'
 import Detail from './components/Detail'
 import './App.scss';
 import { Routes, Route } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 function App() {
   return (
+    <Provider store={store}>
     <div className="App">
+      
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -24,6 +28,7 @@ function App() {
       </Routes> 
       <Footer />
     </div>
+    </Provider>
   );
 }
 
