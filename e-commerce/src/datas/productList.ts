@@ -1,3 +1,5 @@
+import running from "../images/running.jpg"
+
 export const productList = [
 	{
 		name: 'clavier',
@@ -5,6 +7,7 @@ export const productList = [
 		id: '1ed',
 		stock: 2,
 		water: 3,
+		image: running,
 		cover: "clavier",
 		price: 15
 	},
@@ -14,6 +17,7 @@ export const productList = [
 		id: '2ab',
 		stock: 3,
 		water: 1,
+		image: running,
 		cover: "lyrata",
 		price: 16
 	},
@@ -24,6 +28,7 @@ export const productList = [
 		id: '3sd',
 		stock: 1,
 		water: 2,
+		image: running,
 		cover: "pothos",
 		price: 9
 	},
@@ -33,6 +38,7 @@ export const productList = [
 		id: '4kk',
 		stock: 2,
 		water: 3,
+		image: running,
 		cover: "écran",
 		price: 200
 	},
@@ -42,6 +48,7 @@ export const productList = [
 		id: '5pl',
 		stock: 3,
 		water: 1,
+		image: running,
 		cover: "Dictionnaire",
 		price: 25
 	},
@@ -52,6 +59,7 @@ export const productList = [
 		id: '8fp',
 		stock: 2,
 		water: 1,
+		image: running,
 		cover: "cactus",
 		price: 6
 	},
@@ -61,6 +69,7 @@ export const productList = [
 		id: '7ie',
 		stock: 2,
 		water: 3,
+		image: running,
 		cover: "PlayStation 5",
 		price: 5
 	},
@@ -70,6 +79,7 @@ export const productList = [
 		id: '9vn',
 		stock: 2,
 		water: 1,
+		image: running,
 		cover: "Ballon de football",
 		price: 8
 	},
@@ -80,6 +90,7 @@ export const productList = [
 		id: '6uo',
 		stock: 2,
 		water: 2,
+		image: running,
 		cover: "chaussure de running",
 		price: 4
 	}
