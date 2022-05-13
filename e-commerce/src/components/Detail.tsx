@@ -2,7 +2,8 @@ import {useParams} from "react-router-dom";
 import { productList } from '../datas/productList'
 import { useStore, useSelector } from 'react-redux';
 import '../styles/Detail.scss'
-import { changeQuantity, changeTotal, addCommand } from "../redux/store";
+import { changeQuantity, changeTotal } from "../redux/store";
+import { addCommand } from "../redux/command";
 
 function Detail () {
     const store = useStore();
