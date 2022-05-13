@@ -16,7 +16,8 @@ export const productList = [
 		water: 3,
 		image: clavier,
 		cover: "clavier",
-		price: 15
+		price: 15,
+		quantity : 0,
 	},
 	{
 		name: 'marteau',
@@ -26,7 +27,8 @@ export const productList = [
 		water: 1,
 		image: marteau,
 		cover: "lyrata",
-		price: 16
+		price: 16,
+		quantity : 0,
 	},
 
 	{
@@ -37,7 +39,8 @@ export const productList = [
 		water: 2,
 		image: tournevis,
 		cover: "pothos",
-		price: 9
+		price: 9,
+		quantity : 0,
 	},
 	{
 		name: 'écran',
@@ -47,7 +50,8 @@ export const productList = [
 		water: 3,
 		image: ecran,
 		cover: "écran",
-		price: 200
+		price: 200,
+		quantity : 0,
 	},
 	{
 		name: 'Dictionnaire',
@@ -57,7 +61,8 @@ export const productList = [
 		water: 1,
 		image: running,
 		cover: "Dictionnaire",
-		price: 25
+		price: 25,
+		quantity : 0,
 	},
 
 	{
@@ -68,7 +73,8 @@ export const productList = [
 		water: 1,
 		image: cactus,
 		cover: "cactus",
-		price: 6
+		price: 6,
+		quantity : 0,
 	},
 	{
 		name: 'PlayStation 5',
@@ -78,7 +84,8 @@ export const productList = [
 		water: 3,
 		image: ps5,
 		cover: "PlayStation 5",
-		price: 500
+		price: 500,
+		quantity : 0,
 	},
 	{
 		name: 'Ballon de football',
@@ -88,7 +95,8 @@ export const productList = [
 		water: 1,
 		image: ballon,
 		cover: "Ballon de football",
-		price: 8
+		price: 8,
+		quantity : 0,
 	},
 
 	{
@@ -99,6 +107,7 @@ export const productList = [
 		water: 2,
 		image: running,
 		cover: "chaussure de running",
-		price: 40
+		price: 40,
+		quantity : 0,
 	}
 ]
