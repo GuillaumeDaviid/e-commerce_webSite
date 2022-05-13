@@ -32,7 +32,6 @@ function Detail () {
         <div className="Detail">
             Detail du produit {id?.substring(3)}
             {item}
-            {object}
         </div>
     )
 }

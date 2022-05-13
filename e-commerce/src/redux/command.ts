@@ -8,12 +8,10 @@ export const addCommand = createAction('addCommand', (name:string, price:number,
 export const commandReducer = createReducer([productList], (builder:any) =>
   builder
     .addCase(addCommand, (state:any, action:any) => {
-        for (const obj of state[0]) {
-            if (obj.id === 1) {
-              obj.quantity = 1;
-
-              break;
+        state[0].map((item:any,key:any) => {
+            if(item.id === action.payload.id){
+               return state[0][key].quantity++;
             }
-          }
+        });
     })
 )
