@@ -15,8 +15,6 @@ function Detail () {
  
     console.log(totalPrice + '  ' + quantity + '   ' + command);
 
-    const object = command[0].map((data:any) => <div>{data.name}  {data.price}€ {data.quantity}</div>)
-
     const item = productList.map((data) => 
     id?.substring(3) === data.id ? <div className='Template__item'><img  className='Detail_item-img' src={data.image} alt={data.name}/>
     <p className='Detail_item-name'>{data.name}</p>
