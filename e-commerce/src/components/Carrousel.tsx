@@ -27,7 +27,6 @@ function Carrousel () {
         if (carrousel){
             if (nbr > 1){
                 setNbr(nbr - 1);
-                const newNbr= nbr - 1;
                 const newp = p + 1;
                 setp(newp);
             carrousel.style.transform = "translate("+newp*100+"%)";
