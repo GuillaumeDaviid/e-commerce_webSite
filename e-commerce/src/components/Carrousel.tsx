@@ -3,7 +3,7 @@ import chaussures from '../images/chaussures.png'
 import sport from '../images/sport.jpg'
 import chevron from '../images/chevron.png'
 import '../styles/Carrousel.scss'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 function Carrousel () {
     const [p, setp] = useState(0);
