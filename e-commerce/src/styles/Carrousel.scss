@@ -1,12 +1,17 @@
 .carrousel {
     width: 100%;
     height: 100vh;
-    display: flex;
     position: relative;
     overflow: hidden;
+    display: flex;
 
     &_image-item {
         min-width: 100%;
+    }
+
+    &_items {
+        width: 100%;
+        display: flex;
     }
 
     &_right {

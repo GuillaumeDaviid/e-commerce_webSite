@@ -3,15 +3,50 @@ import chaussures from '../images/chaussures.png'
 import sport from '../images/sport.jpg'
 import chevron from '../images/chevron.png'
 import '../styles/Carrousel.scss'
+import { useState, useEffect } from 'react'
 
 function Carrousel () {
+    const [p, setp] = useState(0);
+    const [nbr, setNbr] = useState(1);
+
+    function handleClickRight() {
+        let carrousel = document.getElementById('carrousel');
+        if (carrousel){
+            if (nbr < 3){
+                setNbr(nbr + 1);
+                const newp = p - 1
+                setp(newp);
+                carrousel.style.transform = "translate("+newp*100+"%)";
+                carrousel.style.transition = "all 0.5s ease";
+            }
+        }
+    }
+
+    function handleClickLeft() {
+        let carrousel = document.getElementById('carrousel');
+        if (carrousel){
+            if (nbr > 1){
+                setNbr(nbr - 1);
+                const newNbr= nbr - 1;
+                const newp = p + 1;
+                setp(newp);
+            carrousel.style.transform = "translate("+newp*100+"%)";
+            carrousel.style.transition = "all 0.5s ease";
+            }
+            
+        }
+    }
+
+
     return (
         <div className="carrousel">
+            <div className='carrousel_items' id="carrousel">
             <img className='carrousel_image-item' src={adidas} alt="sport"/>
             <img className='carrousel_image-item' src={chaussures} alt="sport"/>
             <img className='carrousel_image-item' src={sport} alt="sport"/>
-            <div className='carrousel_right'><img  className='chevron-right' src={chevron} alt="chevron"/></div>
-            <div className='carrousel_left'><img src={chevron} alt="chevron"/></div>
+            </div>
+            <div className='carrousel_right' onClick={handleClickRight}><img  className='chevron-right' src={chevron} alt="chevron"/></div>
+            <div className='carrousel_left' onClick={handleClickLeft}><img src={chevron} alt="chevron"/></div>
         </div>
     )
 }
