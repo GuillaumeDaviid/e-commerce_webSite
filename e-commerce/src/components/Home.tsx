@@ -1,10 +1,11 @@
 import '../styles/Home.scss'
 import Template from './Template'
+import Carrousel from './Carrousel'
 
 function Home () {
     return(
         <div className='Home'>
-            <div className='Home__mainImg'>Image princiaple</div>
+            <Carrousel />
 
             <h2>Vetements</h2>
             <Template category="vetement"/>
