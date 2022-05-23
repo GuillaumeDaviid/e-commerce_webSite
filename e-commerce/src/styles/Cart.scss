@@ -33,8 +33,19 @@
         }
 
         &-quantity {
+            margin-left: 20px;
             display: flex;
         }
+    }
+
+    &_button {
+        cursor: pointer;
+        background-color: white;
+        border: solid 1px gray;
+    }
+
+    &_quantity {
+        min-width: 25px;
     }
 }
 

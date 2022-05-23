@@ -10,9 +10,9 @@ function Cart () {
     const listCommand = command[0].map((data:any) => data.quantity > 0 ? <div className='Cart_content-elt'><div className='content-info'>
         <p>{data.name}</p><p>{data.price} €</p></div>
         <div className='Cart_content-quantity'>
-            <button onClick={() => store.dispatch(lessCommand(data.name, data.price, data.id))}>-</button>
-            <p>{data.quantity}</p>
-            <button onClick={() => store.dispatch(addCommand(data.name, data.price, data.id))}>+</button>
+            <button className='Cart_button' onClick={() => store.dispatch(lessCommand(data.name, data.price, data.id))}>-</button>
+            <p className='Cart_quantity'>{data.quantity}</p>
+            <button className='Cart_button' onClick={() => store.dispatch(addCommand(data.name, data.price, data.id))}>+</button>
         </div>
     </div> 
     : <div></div>)
