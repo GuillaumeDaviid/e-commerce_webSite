@@ -1,4 +1,5 @@
 import '../styles/Header.scss'
+import cart from '../images/cart.png'
 import { Link } from "react-router-dom";
 
 function Header () {
@@ -27,7 +28,7 @@ function Header () {
             <Link to="pack" className='link'>Pack</Link>
         </div>
         <div>
-            <Link to="cart" className='link'>Panier</Link>
+            <Link to="cart" className='link'><img className='cart_icon' src={cart} alt="cart" /></Link>
         </div>
             </div>
 
