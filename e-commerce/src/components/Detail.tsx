@@ -12,8 +12,6 @@ function Detail () {
     const totalPrice = useSelector((state:any) => state.totalPrice);
     const quantity = useSelector((state:any) => state.quantity);
     const command = useSelector((state:any) => state.command);
- 
-    console.log(totalPrice + '  ' + quantity + '   ' + command);
 
     const item = productList.map((data) => 
     id?.substring(3) === data.id ? <div className='Template__item'><img  className='Detail_item-img' src={data.image} alt={data.name}/>

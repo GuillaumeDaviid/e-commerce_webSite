@@ -1,14 +1,18 @@
 import '../styles/Cart.scss'
-import { useSelector } from 'react-redux';
+import { useSelector, useStore } from 'react-redux';
+import { addCommand, lessCommand } from "../redux/command";
 
 function Cart () {
+    const store = useStore();
 
     const command = useSelector((state:any) => state.command);
 
     const listCommand = command[0].map((data:any) => data.quantity > 0 ? <div className='Cart_content-elt'><div className='content-info'>
         <p>{data.name}</p><p>{data.price} €</p></div>
         <div className='Cart_content-quantity'>
-            <button>-</button><p>{data.quantity}</p><button>+</button>
+            <button onClick={() => store.dispatch(lessCommand(data.name, data.price, data.id))}>-</button>
+            <p>{data.quantity}</p>
+            <button onClick={() => store.dispatch(addCommand(data.name, data.price, data.id))}>+</button>
         </div>
     </div> 
     : <div></div>)
@@ -26,7 +30,7 @@ function Cart () {
                  
                 <div className='Cart_content-total'>
                     <p>TOTAL :</p>
-                    <p>{price}</p>
+                    <p>{price} €</p>
                 </div>
                 <button className='Cart_content-btn'>Commander</button>
             </div>
