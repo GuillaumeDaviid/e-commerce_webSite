@@ -17,14 +17,15 @@ function Cart () {
     </div> 
     : <div></div>)
 
-  // const quantity = command[0].reduce((total:number, currentValue:any) => total = total + currentValue.quantity,0)
+   const quantity = command[0].reduce((total:number, currentValue:any) => total = total + currentValue.quantity,0)
 
    const price = command[0].reduce((total:number, currentValue:any) => total = total + currentValue.price * currentValue.quantity,0)
 
     return(
         <div className="Cart">
             <h2>Panier</h2>
-            <p>Votre panier est vide</p>
+            {quantity > 0 ? <p></p> : <p>Votre panier est vide</p>}
+            
             <div className='Cart_content'>
              {listCommand}
                  
