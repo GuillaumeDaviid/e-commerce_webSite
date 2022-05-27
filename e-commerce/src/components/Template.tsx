@@ -9,14 +9,14 @@ type Props = {
 function Template ({category}:Props) {
 
     const item = productList.map((data) => 
-    category === data.category ? <div className='Template__item'><Link to={`/detail/id=${data.id}`}><img  className='Template__item__img' src={data.image} alt={data.name}/>
-    <p className='item-name'>{data.name}</p>
-    <p className='item-price'>{data.price} €</p></Link>
+    category === data.category ? <div className='Template__item'><Link data-testid="linkElement" to={`/detail/id=${data.id}`}><img data-testid="imgElement" className='Template__item__img' src={data.image} alt={data.name}/>
+    <p data-testid="nameElement" className='item-name'>{data.name}</p>
+    <p data-testid="priceElement" className='item-price'>{data.price} €</p></Link>
     </div> : <div></div>)
 
 
     return(
-        <div className='Template'>
+        <div data-testid="divElement" className='Template'>
             {item}
         </div>
     )
