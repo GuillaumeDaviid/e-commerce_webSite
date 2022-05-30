@@ -39,13 +39,13 @@ function Carrousel () {
 
     return (
         <div className="carrousel">
-            <div className='carrousel_items' id="carrousel">
-            <img className='carrousel_image-item' src={adidas} alt="sport"/>
-            <img className='carrousel_image-item' src={chaussures} alt="sport"/>
-            <img className='carrousel_image-item' src={sport} alt="sport"/>
+            <div className='carrousel_items' id="carrousel" data-testid="carrouselElement">
+            <img className='carrousel_image-item' src={adidas} alt="adidas" data-testid="imgElement"/>
+            <img className='carrousel_image-item' src={chaussures} alt="chaussures" data-testid="imgElement"/>
+            <img className='carrousel_image-item' src={sport} alt="sport" data-testid="imgElement"/>
             </div>
-            <div className='carrousel_right' onClick={handleClickRight}><img  className='chevron-right' src={chevron} alt="chevron"/></div>
-            <div className='carrousel_left' onClick={handleClickLeft}><img src={chevron} alt="chevron"/></div>
+            <div className='carrousel_right' data-testid="chevron" onClick={handleClickRight}><img  className='chevron-right' src={chevron} alt="chevron"/></div>
+            <div className='carrousel_left' data-testid="chevron"  onClick={handleClickLeft}><img src={chevron} alt="chevron"/></div>
         </div>
     )
 }
