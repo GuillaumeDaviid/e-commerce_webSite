@@ -1,7 +1,7 @@
 import React from 'react';
 import Carrousel from '../components/Carrousel'
 import { BrowserRouter as Router } from "react-router-dom";
-import { fireEvent, render, screen } from '@testing-library/react';
+import {  render, screen } from '@testing-library/react';
 
 
 describe('Carrousel', () => {
@@ -33,16 +33,5 @@ describe('Carrousel', () => {
 
         const chevron = screen.getAllByTestId('chevron');
         expect(chevron).toHaveLength(2);
-    })
-
-    test('Should increment state', async () => {
-        render(
-            <Router>
-            <Carrousel/>
-            </Router>
-        );
-
-        const chevron = screen.getAllByTestId('chevron');
-        fireEvent.click(chevron[0])
     })
 })
