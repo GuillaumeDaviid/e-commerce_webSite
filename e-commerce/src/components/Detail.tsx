@@ -9,16 +9,16 @@ function Detail () {
     const store = useStore();
     let {id} = useParams()
 
-    const item = productList.map((data) => 
-    id?.substring(3) === data.id ? <div className='Template__item'><img  className='Detail_item-img' src={data.image} alt={data.name}/>
-    <p className='Detail_item-name'>{data.name}</p>
-    <p className='Detail_item-price'>{data.price} €</p>
-    <button className="Detail-btn" onClick={() => {
+    const item = productList.map((data, index) => 
+    id?.substring(3) === data.id ? <div className='Template__item' key={index}><img  className='Detail_item-img' src={data.image} alt={data.name}/>
+    <p className='Detail_item-name' data-testid="nameElement">{data.name}</p>
+    <p className='Detail_item-price' data-testid="priceElement">{data.price} €</p>
+    <button className="Detail-btn" data-testid="btnElement" onClick={() => {
         store.dispatch(changeTotal(data.price));
         store.dispatch(changeQuantity());
         store.dispatch(addCommand(data.name, data.price, data.id));
     }}>Ajouter au Panier</button>
-    </div> : <div></div>)
+    </div> : <div key={index}></div>)
 
     return (
         <div className="Detail">
