@@ -1,6 +1,6 @@
 import '../styles/Cart.scss'
 import { useSelector, useStore } from 'react-redux';
-import { addCommand, lessCommand } from "../redux/command";
+import { addCommand, lessCommand, clearCart } from "../redux/command";
 
 function Cart () {
     const store = useStore();
@@ -34,7 +34,7 @@ function Cart () {
                     <p>{price} €</p>
                 </div>
 
-                <p className='Cart_btn-clear'>Vider le panier</p>
+                <p className='Cart_btn-clear' onClick={() => store.dispatch(clearCart())}>Vider le panier</p>
                 <button className='Cart_content-btn' data-testid="btnCommand">Commander</button>
             </div>
         </div>

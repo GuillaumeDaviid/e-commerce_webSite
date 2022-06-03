@@ -9,6 +9,10 @@ export const lessCommand = createAction('lessCommand', (name:string, price:numbe
     payload: {name, price, id},
 }));
 
+export const clearCart = createAction('clearCart', () => ({
+    payload: {},
+}));
+
 export const commandReducer = createReducer([productList], (builder:any) =>
   builder
     .addCase(addCommand, (state:any, action:any) => {
@@ -25,5 +29,10 @@ export const commandReducer = createReducer([productList], (builder:any) =>
                return state[0][key].quantity--;
             }
         });
+    })
+
+    .addCase(clearCart, (state: any, action:any) => {
+        const newState = productList
+        return state = [newState]
     })
 )
