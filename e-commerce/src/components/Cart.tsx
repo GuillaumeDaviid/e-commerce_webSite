@@ -33,6 +33,8 @@ function Cart () {
                     <p>TOTAL :</p>
                     <p>{price} €</p>
                 </div>
+
+                <p className='Cart_btn-clear'>Vider le panier</p>
                 <button className='Cart_content-btn' data-testid="btnCommand">Commander</button>
             </div>
         </div>

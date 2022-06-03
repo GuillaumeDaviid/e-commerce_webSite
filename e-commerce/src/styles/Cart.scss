@@ -38,6 +38,13 @@
         }
     }
 
+    &_btn-clear {
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
     &_button {
         cursor: pointer;
         background-color: white;
