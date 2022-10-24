@@ -1,8 +1,18 @@
 import '../styles/Header.scss'
+import { useSelector } from 'react-redux';
 import cart from '../images/cart.png'
 import { Link } from "react-router-dom";
 
 function Header () {
+
+    const command = useSelector((state:any) => state.command);
+    const totalQuantity = command[0].reduce((total:number, currentValue:any) => total = total + currentValue.quantity,0)
+
+
+    const quantity = totalQuantity > 0 && <div className='cart_quantity'>{totalQuantity}</div>
+
+    console.log(command)
+
     return(
         <div className="header">
             <div>
@@ -28,7 +38,8 @@ function Header () {
             <Link to="pack" className='link'>Pack</Link>
         </div>
         <div>
-            <Link data-testid="cartLink" to="cart" className='link'><img className='cart_icon' src={cart} alt="cart" /></Link>
+            
+            <Link data-testid="cartLink" to="cart" className='link'>{quantity}<img className='cart_icon' src={cart} alt="cart" /></Link>
         </div>
             </div>
 
