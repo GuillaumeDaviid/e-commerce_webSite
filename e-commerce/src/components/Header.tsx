@@ -38,8 +38,8 @@ function Header () {
             <Link to="pack" className='link'>Pack</Link>
         </div>
         <div>
-            {quantity}
-            <Link data-testid="cartLink" to="cart" className='link'><img className='cart_icon' src={cart} alt="cart" /></Link>
+            
+            <Link data-testid="cartLink" to="cart" className='link'>{quantity}<img className='cart_icon' src={cart} alt="cart" /></Link>
         </div>
             </div>
 
