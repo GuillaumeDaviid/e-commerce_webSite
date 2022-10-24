@@ -11,8 +11,6 @@ function Header () {
 
     const quantity = totalQuantity > 0 && <div className='cart_quantity'>{totalQuantity}</div>
 
-    console.log(command)
-
     return(
         <div className="header">
             <div>
