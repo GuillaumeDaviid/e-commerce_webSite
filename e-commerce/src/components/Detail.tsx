@@ -22,7 +22,7 @@ function Detail () {
 
     return (
         <div className="Detail">
-            Detail du produit {id?.substring(3)}
+            Detail du produit
             {item}
         </div>
     )
