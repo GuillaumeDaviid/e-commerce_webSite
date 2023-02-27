@@ -82,8 +82,8 @@ nav > ul {
 
   .sous-menu {
     z-index: 99;
-    width: 10vw;
-    text-align: left;
+    width: 7vw;
+    text-align: center;
     background-color: white;
     border-radius: 2px;
     top:30px;
@@ -91,11 +91,15 @@ nav > ul {
     max-height: 0;
     position: absolute;
   }
+
+  .sous-menu > li {
+    margin-left: -40px;
+    width: 10vw;
+  }
   
   .sous-menu > li > a {
     position: relative;
     height: 50px;
-    width: 50px;
     display: flex;
   }
 
