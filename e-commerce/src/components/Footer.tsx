@@ -22,7 +22,7 @@ function Footer () {
             </div>
             </div>
 
-            <p>© 2022, commercia</p>
+            <p>© {new Date().getFullYear()}, commercia</p>
         </div>
     )
 }
