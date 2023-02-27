@@ -33,7 +33,7 @@ function Header () {
         </nav>
         </div>
         <div>
-            <Link to="pack" className='link'>Pack</Link>
+            <Link to="contact" className='link'>Contact</Link>
         </div>
         <div>
             

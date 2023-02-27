@@ -1,0 +1,21 @@
+.Contact {
+    min-height: 90vh;
+    margin-bottom: 50px;
+
+    &_link {
+        margin-top: 20px;
+        &-elt {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    a {
+        color: #2169EC;
+    }
+
+    a:visited {
+        color: #2169EC;
+    }
+}
