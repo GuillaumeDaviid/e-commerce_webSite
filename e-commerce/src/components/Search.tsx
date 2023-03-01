@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Product, productList } from '../datas/productList'; // import de la liste des produits
 import '../styles/Search.scss'
 import { Link } from "react-router-dom"
-import loupe from '../images/loupe.png'
+import loupe from '../images/loupe.svg'
 
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -55,9 +55,9 @@ function SearchBar() {
       {showResults && (
       <div className='Search_results'>
       {searchResults.map((product:any) => (
-        <div key={product.id}>
-          <Link to={`/detail/id=${product.id}`}>{product.name}</Link>
-        </div>
+        <Link to={`/detail/id=${product.id}`} className="Search_item">
+            <div>{product.name}</div>
+        </Link>
       ))}
       </div>)}
 
