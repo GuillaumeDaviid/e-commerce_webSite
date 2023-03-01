@@ -7,6 +7,18 @@ import tournevis from "../images/tournevis.jpg"
 import cactus from "../images/cactus.jpg"
 import ps5 from '../images/ps5.jpg'
 
+export type Product = {
+    name: string;
+    category: string;
+    id: string;
+    stock: number;
+    water: number;
+    image: string;
+    cover: string;
+    price: number;
+    quantity: number;
+}[]
+
 export const productList = [
 	{
 		name: 'clavier',

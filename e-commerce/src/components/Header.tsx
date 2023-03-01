@@ -2,6 +2,7 @@ import '../styles/Header.scss'
 import { useSelector } from 'react-redux';
 import cart from '../images/cart.png'
 import { Link } from "react-router-dom";
+import Search from './Search';
 
 function Header () {
 
@@ -17,6 +18,7 @@ function Header () {
             <Link to="/"><h1 data-testid="website_title" className='header__link__title'>COMMERCIA</h1></Link>
             </div>
 
+            <Search />
 
             <div className="header__link">
                 <div>
