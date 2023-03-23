@@ -54,11 +54,11 @@ function SearchBar() {
 
       {showResults && (
       <div className='Search_results'>
-      {searchResults.map((product:any) => (
+      {searchResults.length > 0 ?
+      searchResults.map((product:any) => (
         <Link to={`/detail/id=${product.id}`} className="Search_item">
             <div>{product.name}</div>
-        </Link>
-      ))}
+        </Link>)) : <p>Aucun résultat</p>}
       </div>)}
 
     </div>
